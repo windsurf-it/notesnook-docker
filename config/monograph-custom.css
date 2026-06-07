@@ -21,6 +21,11 @@
   border-bottom-color: transparent !important;
 }
 
+#root > div > div > a {
+  /* Publish a note */
+  display: none !important;
+}
+
 /* ซ่อน footer */
 footer {
   display: none !important;
