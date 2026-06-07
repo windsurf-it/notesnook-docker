@@ -10,28 +10,24 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
-#root > div:first-child > div > div > div > a {
+#root > div > div > div > div > a {
   /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
   display: none !important;
 }
 
-#root > div:first-child > div > span {
-  display: none !important;
-}
-
-#root > div:first-child > div > div {
+#root > div > div > div {
   /* padding title */
   padding-top: 20px !important;
 }
 
-#root > div:first-child > div > div {
+#root > div > div > div {
   /* background title */
   background-color: transparent !important;
   border-bottom-color: transparent !important;
 }
 
-#root > div:first-child > div > a {
+#root > div > div > a {
   /* Publish a note */
   display: none !important;
 }
@@ -51,7 +47,7 @@ footer {
     color: #1a1a1a !important;
   }
 
-  #root > div:first-child > div > span {
+  #root > div > div > span {
     /*logo login*/
     color: #1a1a1a !important;
   }
