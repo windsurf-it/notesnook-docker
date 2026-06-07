@@ -73,6 +73,7 @@ COPY config/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Startup script สำหรับแทน placeholder ด้วยค่าจริงตอน runtime
 COPY config/docker-entrypoint.sh /docker-entrypoint.sh
+
 RUN chmod +x /docker-entrypoint.sh
 
 EXPOSE 80

@@ -4,25 +4,19 @@ cd "$(dirname "$0")"
 IMAGE=rawinby/notesnook-web
 VERSION=${1:-latest}
 
-# สร้าง builder สำหรับ multi-platform
-docker buildx create --use --name multi-builder
-
-# build multi-platform (amd64 + arm64) แล้ว push ไป Docker Hub ในคำสั่งเดียว
-#  --platform linux/amd64,linux/arm64 \
-docker buildx build \
-  --platform linux/amd64 \
+# Build image สำหรับ platform เดียว (สถาปัตยกรรมเครื่องที่รัน)
+docker build \
   --build-arg VERSION_NUMBER=$VERSION \
   -t $IMAGE:$VERSION \
   -f ./config/Dockerfile \
-  --push \
   .
 
-# ลบ builder หลัง push เสร็จเพื่อเคลียร์ resource
-docker buildx rm multi-builder 2>/dev/null || true
+# Push image ขึ้น Docker Hub หลัง build เสร็จ
+docker push $IMAGE:$VERSION
 
 # การใช้งาน:
-# ./docker/build.bat 1.0.2   #สั่ง Build และ Push image พร้อมระบุ version
-# ./docker/start.bat          #สั่ง Start Container
+# ./build.bat 1.0.2   # Build และ Push พร้อมระบุ version
+# ./build.bat         # Build และ Push ด้วย version "latest"
 
 
 
