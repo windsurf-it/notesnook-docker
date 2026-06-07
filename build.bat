@@ -14,7 +14,7 @@ docker buildx build \
   -t $IMAGE:$VERSION \
   -f ./config/Dockerfile \
   --push \
-  ..
+  .
 
 # ลบ builder หลัง push เสร็จเพื่อเคลียร์ resource
 docker buildx rm multi-builder 2>/dev/null || true
