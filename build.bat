@@ -12,7 +12,7 @@ docker buildx build \
   --platform linux/amd64,linux/arm64 \
   --build-arg VERSION_NUMBER=$VERSION \
   -t $IMAGE:$VERSION \
-  -f ./Dockerfile \
+  -f ./config/Dockerfile \
   --push \
   ..
 
