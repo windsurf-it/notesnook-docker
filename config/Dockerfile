@@ -69,10 +69,10 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/apps/web/build /usr/share/nginx/html
 
 # Custom nginx config for SPA
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY config/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Startup script สำหรับแทน placeholder ด้วยค่าจริงตอน runtime
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY config/docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
 EXPOSE 80
