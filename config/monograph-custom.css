@@ -10,6 +10,11 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
+#root > div > div > div.nnsc-1lru7wn > div > a {
+  /* ปิดการกดลิงค์ logo */
+  pointer-events: none !important;
+}
+
 /* ซ่อน footer */
 footer {
   display: none !important;
