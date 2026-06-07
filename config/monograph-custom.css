@@ -10,6 +10,7 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
+#root > div > div > span,
 #root > div > div > div > div > a {
   /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
