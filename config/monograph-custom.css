@@ -30,10 +30,10 @@
 
 /* ---------------------------------------------------------------- */
 
-/* #root > div.theme-scope-base > div:first-child > span { */
-/* logo หน้า 404 */
-/* display: none !important; */
-/* } */
+#root > div.theme-scope-base > div:first-child {
+  /* logo หน้า 404 */
+  border-bottom-color: transparent !important;
+}
 
 #root > div.theme-scope-base > div:first-child > a {
   /* Publish a note */
