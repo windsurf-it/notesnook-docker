@@ -6,6 +6,7 @@ VERSION=${1:-latest}
 
 # Build image สำหรับ platform เดียว (สถาปัตยกรรมเครื่องที่รัน)
 docker build \
+  --no-cache \
   --build-arg VERSION_NUMBER=$VERSION \
   -t $IMAGE:$VERSION \
   -f ./config/Dockerfile \
