@@ -18,6 +18,7 @@
 #root > div.theme-scope-base > div:first-child > div:nth-child(1) {
   /* background title */
   background-color: transparent !important;
+  border-bottom-color: transparent !important;
 }
 
 #root > div.theme-scope-base > div:first-child > div:nth-child(2) {
