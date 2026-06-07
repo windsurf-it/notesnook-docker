@@ -33,6 +33,16 @@ footer {
     border-color: #e0e0e0;
   }
 
+  /* Heading ให้เข้มชัดในทุกระดับ */
+  .theme-scope-base h1,
+  .theme-scope-base h2,
+  .theme-scope-base h3,
+  .theme-scope-base h4,
+  .theme-scope-base h5,
+  .theme-scope-base h6 {
+    color: #111111 !important;
+  }
+
   /* Content พื้นหลัง */
   .theme-scope-base div {
     background-color: #ffffff !important;
