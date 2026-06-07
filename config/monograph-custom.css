@@ -50,7 +50,7 @@ footer {
    Light mode — override เมื่อ system เป็น light
    app default เป็น dark จึงต้อง override ตรงๆ
    ========================================= */
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light--A) {
   [type='password'] {
     background-color: #fff !important;
     color: #1a1a1a !important;
