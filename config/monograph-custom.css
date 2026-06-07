@@ -57,7 +57,7 @@ footer {
 
   div.theme-scope-base > div:first-child span:first-child {
     /*logo login*/
-    color: #1a1a1a !important;
+    color: unset;
   }
 
   /* root wrapper ที่ app ใช้คุม theme */
