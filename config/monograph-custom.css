@@ -20,7 +20,7 @@
   display: none !important;
 }
 
-#root > div.theme-scope-base > div:first-child > div > div {
+#root > div.theme-scope-base > div:first-child > div:nth-child(2) {
   /* padding title */
   padding-top: 20px !important;
 }
