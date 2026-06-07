@@ -211,6 +211,8 @@ services:
     volumes:
       # nginx config สำหรับ proxy + inject custom CSS via sub_filter
       - ./config/monograph-nginx.conf:/etc/nginx/conf.d/default.conf
+      # Mount custom CSS เพื่อให้ nginx serve โดยตรง (ป้องกัน 404 จาก proxy)
+      - ./config/monograph-custom.css:/etc/nginx/custom/custom.css:ro
     depends_on:
       - monograph-server
     networks:
