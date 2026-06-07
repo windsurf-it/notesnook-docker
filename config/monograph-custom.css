@@ -10,6 +10,11 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
+[type='password'] {
+  background-color: #fff !important;
+  color: #1a1a1a;
+}
+
 #root > div > div > span {
   /*logo login*/
   color: #1a1a1a;
