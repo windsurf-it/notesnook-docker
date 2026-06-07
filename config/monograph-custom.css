@@ -13,12 +13,6 @@
 #root > div.theme-scope-base > div:first-child div div a {
   /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
-  display: none !important;
-}
-
-#root > div.theme-scope-base > div:first-child > span {
-  /* logo หน้า 404 */
-  display: none !important;
 }
 
 #root > div.theme-scope-base > div:first-child > div:nth-child(2) {
@@ -30,6 +24,13 @@
   /* background title */
   background-color: transparent !important;
   border-bottom-color: transparent !important;
+}
+
+/* ---------------------------------------------------------------- */
+
+#root > div.theme-scope-base > div:first-child > span {
+  /* logo หน้า 404 */
+  /* display: none !important; */
 }
 
 #root > div.theme-scope-base > div:first-child > a {
