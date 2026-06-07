@@ -28,12 +28,12 @@ footer {
 @media (prefers-color-scheme: light) {
   [type='password'] {
     background-color: #fff !important;
-    color: #1a1a1a;
+    color: #1a1a1a !important;
   }
 
   #root > div > div > span {
     /*logo login*/
-    color: #1a1a1a;
+    color: #1a1a1a !important;
   }
 
   #root > div > div > div > div > a {
