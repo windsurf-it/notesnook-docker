@@ -15,6 +15,10 @@
   pointer-events: none !important;
 }
 
+#root > div > div > div.nnsc-183mcz1 {
+  padding: 20px 10px 20px;
+}
+
 /* ซ่อน footer */
 footer {
   display: none !important;
