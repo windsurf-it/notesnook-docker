@@ -11,7 +11,7 @@
 }
 
 /* ตัวอย่าง: เปลี่ยน font */
-body {
+* {
   font-family: 'Sarabun', sans-serif;
 }
 
