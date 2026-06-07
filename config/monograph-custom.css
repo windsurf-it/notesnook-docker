@@ -18,9 +18,7 @@
 #root > div > div > div {
   /* background title */
   background-color: transparent !important;
-}
-#root > div > div > div {
-  background-color: transparent !important;
+  border-bottom-color: transparent !important;
 }
 
 /* ซ่อน footer */
