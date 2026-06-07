@@ -233,9 +233,10 @@ services:
 
   app:
     image: rawinby/notesnook-web
-    build:
-      context: app
-      dockerfile: Dockerfile
+    # สำหรับ local development ให้ build image จาก Dockerfile ในโฟลเดอร์ app แทนที่จะ pull จาก registry
+    # build:
+    #   context: config # folder นี้มี Dockerfile
+    #   dockerfile: Dockerfile
     environment:
       NN_API_HOST: ${NOTESNOOK_SYNC_PUBLIC_URL}
       NN_AUTH_HOST: ${AUTH_SERVER_PUBLIC_URL}
