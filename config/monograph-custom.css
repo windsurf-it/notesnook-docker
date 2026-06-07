@@ -15,6 +15,14 @@
   padding-top: 20px !important;
 }
 
+#root > div > div > div {
+  /* background title */
+  background-color: transparent !important;
+}
+#root > div > div > div {
+  background-color: transparent !important;
+}
+
 /* ซ่อน footer */
 footer {
   display: none !important;
@@ -38,11 +46,6 @@ footer {
   #root > div > div > div > div > a {
     /* ปิดการกดลิงค์ logo หน้า page */
     pointer-events: none !important;
-  }
-
-  #root > div > div > div {
-    /* padding title */
-    border-bottom-color: #ccc !important;
   }
 
   /* root wrapper ที่ app ใช้คุม theme */
