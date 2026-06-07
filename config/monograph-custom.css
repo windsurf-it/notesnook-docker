@@ -31,7 +31,7 @@
   border-bottom-color: transparent !important;
 }
 
-#root > div.theme-scope-base > div:first-child > div > div > a {
+#root > div.theme-scope-base > div:first-child > a {
   /* Publish a note */
   display: none !important;
 }
