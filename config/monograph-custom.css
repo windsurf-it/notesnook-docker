@@ -15,7 +15,6 @@
   font-family: 'Sarabun', sans-serif;
 }
 
-/* ตัวอย่าง: ปรับ max-width ของ content */
-/* article {
-  max-width: 720px;
-} */
+footer {
+  display: none !important; /* ซ่อน footer */
+}
