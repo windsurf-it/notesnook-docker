@@ -55,7 +55,7 @@ footer {
     color: #1a1a1a !important;
   }
 
-  #root > div:theme-scope-base > div:first-child > span {
+  #root > div:theme-scope-base > div:first-child span:first-child {
     /*logo login*/
     color: #1a1a1a !important;
   }
