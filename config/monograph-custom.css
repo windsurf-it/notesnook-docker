@@ -10,7 +10,7 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
-#root > div.theme-scope-base > div:first-child > div:nth-child(2) > a {
+#root > div.theme-scope-base > div:first-child > div:first-child > div:first-child > a {
   /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
   display: none !important;
