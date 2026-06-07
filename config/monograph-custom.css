@@ -32,6 +32,7 @@
 
 #root > div.theme-scope-base > div:first-child {
   /* logo หน้า 404 */
+  background-color: transparent !important;
   border-bottom-color: transparent !important;
 }
 
