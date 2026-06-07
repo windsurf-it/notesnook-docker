@@ -60,6 +60,11 @@ footer {
     color: unset;
   }
 
+  #root > div.theme-scope-base > div:nth-child(2) span {
+    /* logo หน้า 404 */
+    color: unset;
+  }
+
   /* root wrapper ที่ app ใช้คุม theme */
   .theme-scope-base,
   .theme-scope-base > div {
