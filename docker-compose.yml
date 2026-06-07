@@ -180,13 +180,17 @@ services:
 
   monograph-server:
     image: streetwriters/monograph:latest
-    ports:
-      - 6264:3000
+    # ไม่ expose port ออกภายนอก — รับ traffic ผ่าน monograph-proxy แทน
+    expose:
+      - 3000
     env_file: *env-files
     depends_on:
       - notesnook-server
     networks:
       - notesnook
+    volumes:
+      # Mount custom CSS เข้าไปใน /public เพื่อให้ nginx proxy inject ได้
+      - ./config/monograph-custom.css:/app/public/custom.css
     healthcheck:
       test: wget --tries=1 -nv -q  http://localhost:3000/api/health -O- || exit 1
       interval: 40s
@@ -198,6 +202,20 @@ services:
       API_HOST: ${NOTESNOOK_SYNC_PUBLIC_URL}
       PUBLIC_URL: ${MONOGRAPH_PUBLIC_URL}
       HOST: "0.0.0.0"
+
+  monograph-proxy:
+    image: nginx:alpine
+    # Port 6264 เป็น public port ของ Monograph (เดิมอยู่ที่ monograph-server)
+    ports:
+      - 6264:80
+    volumes:
+      # nginx config สำหรับ proxy + inject custom CSS via sub_filter
+      - ./config/monograph-nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - monograph-server
+    networks:
+      - notesnook
+    restart: always
 
   autoheal:
     image: willfarrell/autoheal:latest

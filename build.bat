@@ -9,7 +9,8 @@ docker buildx create --use --name multi-builder
 
 # build multi-platform (amd64 + arm64) แล้ว push ไป Docker Hub ในคำสั่งเดียว
 docker buildx build \
-  --platform linux/amd64,linux/arm64 \
+#  --platform linux/amd64,linux/arm64 \
+  --platform linux/amd64 \
   --build-arg VERSION_NUMBER=$VERSION \
   -t $IMAGE:$VERSION \
   -f ./config/Dockerfile \
