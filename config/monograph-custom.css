@@ -10,12 +10,18 @@
   font-family: 'Sarabun', sans-serif !important;
 }
 
+#root > div > div > span {
+  /*logo login*/
+  color: #1a1a1a;
+}
+
 #root > div > div > div.nnsc-1lru7wn > div > a {
-  /* ปิดการกดลิงค์ logo */
+  /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
 }
 
-#root > div > div > div.nnsc-183mcz1 {
+#root > div > div > div {
+  /* padding title */
   padding-top: 20px !important;
   border-bottom-color: #ccc !important;
 }
@@ -30,6 +36,9 @@ footer {
    app default เป็น dark จึงต้อง override ตรงๆ
    ========================================= */
 @media (prefers-color-scheme: light) {
+  [type='password'] {
+    background-color: #fff !important;
+  }
   /* root wrapper ที่ app ใช้คุม theme */
   .theme-scope-base,
   .theme-scope-base > div {
