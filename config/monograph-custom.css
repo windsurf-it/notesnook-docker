@@ -13,6 +13,7 @@
 #root > div > div > div > div > a {
   /* ปิดการกดลิงค์ logo หน้า page */
   pointer-events: none !important;
+  display: none !important;
 }
 
 #root > div > div > div {
