@@ -15,12 +15,12 @@
   pointer-events: none !important;
 }
 
-#root > div.theme-scope-base > div:first-child > div:nth-child(2) {
+#root > div.theme-scope-base > div:first-child div:nth-child(2) {
   /* padding title */
   padding-top: 20px !important;
 }
 
-#root > div.theme-scope-base > div:first-child > div:nth-child(2) {
+#root > div.theme-scope-base > div:first-child div:nth-child(1) {
   /* background title */
   background-color: transparent !important;
   border-bottom-color: transparent !important;
@@ -84,7 +84,6 @@ footer {
   /* Content พื้นหลัง */
   .theme-scope-base div {
     background-color: #ffffff !important;
-    border-bottom-color: transparent !important;
   }
 
   /* ยกเว้น code block ให้มี background ต่างออก */
