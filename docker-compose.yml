@@ -102,7 +102,7 @@ services:
     command:
       - -c
       - |
-        until mc alias set minio http://notesnook-s3:9000 ${MINIO_ROOT_USER:-minioadmin} ${MINIO_ROOT_PASSWORD:-minioadmin}; do
+        until mc alias set minio http://notesnook-s3:9000 "${MINIO_ROOT_USER:-minioadmin}" "${MINIO_ROOT_PASSWORD:-minioadmin}"; do
           sleep 1;
         done;
         mc mb minio/attachments -p
